@@ -16,7 +16,6 @@ app.use(cors());
 connectDB();
 app.use(express.json());
 
-
 app.get('/ping', (req: Request, res: Response) => {
     res.status(200).send('pong')});
 app.post('/api/form',async (req: Request, res: Response) => {
